@@ -6,6 +6,8 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title> Атмахилинг в Харькове</title>
     <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/b42a75b7b0.js" crossorigin="anonymous"></script>
+    
 </head>
 <body>
 
@@ -96,7 +98,7 @@
   <div class="container">
     <h2 class="section_title"> Отзывы о нас:</h2>
 
-    <div class="feedBack"> <!-- В ввидео название services-->
+    <div class="feedBack"> <!-- В видео название services. Изначально тут можно написать виды услуг-->
       <div class="feedBack_item">
         <img class="feedBack_image" src="images/avatars/1.png" alt="">
         <div class="feedBack_title">Татьяна Новикова</div>
@@ -140,7 +142,7 @@
 
     <div class="WhyMy">   <!-- Раздел с аккордеоном-->
       <div class="Why_item">
-        <img class="atmahiller" src="images/atmahiler.png" alt="" >
+        <img class="atmahiller" src="images/atmahiler.png" width="300" height="400" alt="" >
       </div>
       <div class="Why_item">
         <div class="accordion"> <!-- Объявляем что контейнер-->
@@ -177,14 +179,64 @@
               - цикл Атмахилинга (шесть индивидуальны сеансов), проводится для максимально эффективной интеграции результатов работы;</div>
           </div>
         </div>
-        
-      </div>
+      </div>      
     </div>
   </div>
 </section>
 
+<div class="section section--grey"> <!-- Секция без заголовка поэтому использовать DIV, а не section-->
+  <div class="container">
+    <h2 class="section_title"> Кому подходит данная практика:</h2>
+    <div class="reviews">
+      <div class="reviews_item">
+        <img class="reviews_photo" src="images/icon4.png" width="100" height="100" alt="">
+        <div class="reviews_text">Если вы хотите проработать ограничивающие программы на физическом и тонко-материальном уровне:
+           страх, обиды, стресс, негативные мысли, ограничения, неприятие себя. 
+           Все это отражается на внешности и накапливается в теле.</div>
+           
+      </div>
+    </div>
+  </div>
+</div>
 
 
 
+<footer class="footer">
+  <div class="container">
+    <div class="footer_inner">
+      <div class="footer_col footer_col--first">  <!-- footer_col--first Модифактор, который задает исключетльно этому столбу ширину  40% от всего.-->
+        <div class="footer_text">
+          Подписывайтесь на наши социальные сети:
+        </div>
+        <div class="footer_social">
+          <div class="footer_content">
+            <a href="https://www.facebook.com/profile.php?id=100014111657998">
+              <i class="fa-brands fa-facebook"></i>
+            </a> 
+            <a href="https://www.instagram.com/slukina.valeriia/">
+              <i class="fa-brands fa-instagram"></i>
+            </a>
+            <a href="https://telegram.org/">
+              <i class="fa-brands fa-telegram"></i>
+            </a>
+          </div>
+        </div>
+        <form class="subscribe" action="/" method="post">
+          <input class="subscribe_input" type="email" name="name" placeholder="Ваша почта">
+          <button class="subscribe_btn" type="submit">Подписаться</button>
+        </form>
+      </div>
+      <!-- TODO: Написать Блог-->
+      <div class="footer_col footer_col--second">
+        123
+      </div>
+      <!-- TODO: ПОследние статьи из фейсбук-->
+      <div class="footer_col footer_col--third">
+        123
+      </div>
+    </div>
+  </div>
+</footer>
+<script src="https://ajax.googleapis.com/ajax/libs/jquery/3.6.4/jquery.min.js"></script> <!-- Подключаем Jquary-->
 </body>
 </html>

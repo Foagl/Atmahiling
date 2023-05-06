@@ -50,7 +50,7 @@ body {
 }
 .intro_button:hover{  /* Действие кнопки при наведении на неё указателя*/
     color: #000;
-    background-color:blanchedalmond;
+    background-color:#85a6d3;
 }
 
 /* Контейнер для задания места для текста*/
@@ -113,7 +113,7 @@ body {
 }
 /* Hover - что будет если мы наведем на ссылки меню */
 .nav_link:hover {
-    color: blanchedalmond;
+    color: #85a6d3;
     /*text-decoration: underline;*/
 }
 
@@ -121,6 +121,9 @@ body {
 .section {
     padding: 40px 0;
      /* Отступы между секциями по вертикали 80пх*/
+}
+.section--gray{
+    background-color: #f8f8f8;
 }
 
 /* Описываем правила для текста внутри второго блока*/
@@ -293,3 +296,94 @@ body {
     font-size: 20px;
     text-transform: uppercase;
 }
+
+/*Reviews*/
+.reviews{
+    padding: 0 110px;  /* Отступы от правых краев*/
+    display: flex;
+    justify-content: center; /* Отсебятина для вырванивание 2 картинок*/
+    text-align: center;/* Отсебятина для вырванивание 2 картинок*/
+}
+
+.reviews_item{
+    padding-top: 10px; 
+    width: 70%;
+    position: relative;
+}
+.reviews_photo{
+    position: absolute;
+    top: 10px;
+    left: -130px;
+    z-index: 1;
+}
+.reviews_text{
+    font-size: 20px;
+    font-weight: 100;
+    color: #999;
+}
+/* Footer/ Подвал */
+.footer{
+    padding-top: 50px;
+    
+}
+.footer_text{
+    margin-bottom: 5px;
+    color: #000;
+    font-size: 20px;
+    font-weight: bold;
+}
+.footer_social{
+    margin-bottom: 5px;
+  }
+.footer_inner{
+    display: flex;
+    justify-content: space-between; /* Растягиваем контент и делаем между ними отступы*/
+   padding-bottom: 65px; /* Отступ снизу*/ 
+}
+
+.footer_col--first{  /* что бы раздел занимал 40% от ширины блока. Перед этим я указал в footer_inner dislay: flex;*/
+    width: 40%;
+}
+.footer_col--second{
+    width: 29%;
+}
+.footer_col--third{
+    width: 22%;
+}
+
+.footer_content a{   /* Через атрибут "а" я помечаю, что правила будут применятся для ссылок внутри а.*/
+    display: inline-block;
+    vertical-align: middle;
+    color: #000;
+    font-size: 24px;
+    margin-left: 10px; /* Каждая ссылка имеет отступ слева 10пксл*/
+  }
+  .subscribe{
+    width: 100%;
+    max-width: 380px;
+  }
+  .subscribe_input{
+    width: 60%;
+    padding: 5px 5px; /* Внутренние отступы*/
+    border: 1px solid #85a6d3;
+    font-size: 15px;
+    font-style: italic;
+    color: #85a6d3;
+  }
+  .subscribe_input:focus{  /* Когда начинаю набирать мейл в вводе пропадает бордер черный по умолчанию*/
+    outline: 0;  
+  }
+  .subscribe_btn{
+    width: 35%;
+    padding: 7px 15px;
+    background-color: #85a6d3;
+    color: #fff;
+    border: 0;
+    cursor: pointer;
+    text-transform: uppercase;
+    font-family: PFCentroSansPro-Italic;
+    transition: background .2s linear;
+  }
+  .subscribe_btn:hover{
+    background-color: #5483c5;
+  }
