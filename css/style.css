@@ -387,3 +387,8 @@ body {
   .subscribe_btn:hover{
     background-color: #5483c5;
   }
+  .testContent{
+    transition: 0.2s ease-in-out;
+    max-height: 0;
+    overflow: hidden;
+  }
