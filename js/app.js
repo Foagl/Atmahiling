@@ -8,7 +8,8 @@ document.querySelectorAll('.btnTop').forEach((el) =>{
             document.querySelectorAll('.testContent').forEach((el) => el.style.maxHeight = null)}
         else{
             document.querySelectorAll('.testContent').forEach((el) => el.style.maxHeight = null)
-            content.style.maxHeight = content.scrollHeight + 'px'
+            
+            content.style.maxHeight = content.scrollHeight + 'px';
         }
     })
 })
